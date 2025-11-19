@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Navbar</title>
+  <style>
+    nav ul {
+      list-style: none; /* bullets ko hatao */  
+      padding: 0;
+      margin: 0;
+      background-color: #333;
+    }
+
+    nav li {
+      display: inline; /* links ek line mein honge */  
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="home">Home Section</h2>
+  <p>Yahan home ka content hai.</p>
+
+  <h2 id="about">About Section</h2>
+  <p>Yahan about ka content hai.</p>
+
+  <h2 id="services">Services Section</h2>
+  <p>Yahan services ka content hai.</p>
+
+  <h2 id="contact">Contact Section</h2>
+  <p>Yahan contact ka content hai.</p>
+
+</body>
+</html>
