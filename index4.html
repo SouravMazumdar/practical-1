@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alternate Row Colors</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+    }
+
+    /* Alternate row colors */
+    tr:nth-child(odd) {
+      background-color: #f2f2f2; 
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff; /*
+    }
+
+    /* Optionally, style the
+    thead tr {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Sr. No</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Alice</td><td>alice@example.com</td></tr>
+      <tr><td>2</td><td>Bob</td><td>bob@example.com</td></tr>
+      <tr><td>3</td><td>Charlie</td><td>charlie@example.com</td></tr>
+      <tr><td>4</td><td>Diana</td><td>diana@example.com</td></tr>
+      
+    </tbody>
+  </table>
+
+</body>
+</html>
