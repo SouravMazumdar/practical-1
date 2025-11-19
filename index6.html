@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Styled Heading 2</title>
+  <style>
+    /* Define a custom font using @font-face */
+    @font-face {
+      font-family: 'MySpecialFont';
+      src: url('fonts/MySpecialFont.woff2') format('woff2'),
+           url('fonts/MySpecialFont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Style for the heading */
+    h2.styled-heading {
+      font-family: 'MySpecialFont', sans-serif;  /* custom font + fallback */
+      color: #2e1a47;                             /* dark purple text */
+      background-color: #f1c40f;                  /* bright yellow background */
+
+      padding: 16px 24px;
+      border-radius: 6px;
+
+      text-align: left;
+      font-size: 2rem;     /* size of heading */
+      margin: 30px 0;
+      
+      /* Additional styling */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="styled-heading">This Is a Special Heading</h2>
+
+</body>
+</html>
